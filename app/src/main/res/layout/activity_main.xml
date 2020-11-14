@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F2F2F2"
+    tools:context=".ui.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickFirestore"
+            android:padding="16dp"
+            android:drawableTop="@drawable/ic_firestore"
+            android:background="@drawable/drawable_main_btn"
+            android:drawablePadding="8dp"
+            android:text="Firestore"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="1dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickCrashlytics"
+            android:padding="16dp"
+            android:drawableTop="@drawable/ic_crashlytics"
+            android:background="@drawable/drawable_main_btn"
+            android:drawablePadding="8dp"
+            android:text="Crashlytics"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_regular"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickRemoteConfig"
+            android:padding="16dp"
+            android:drawableTop="@drawable/ic_remoteconfig"
+            android:background="@drawable/drawable_main_btn"
+            android:drawablePadding="8dp"
+            android:text="Remote Config"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="1dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickDynamicLink"
+            android:padding="16dp"
+            android:drawableTop="@drawable/ic_dynamiclink"
+            android:background="@drawable/drawable_main_btn"
+            android:drawablePadding="8dp"
+            android:text="Dynamic Link"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_regular"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickSignOut"
+            android:padding="16dp"
+            android:drawableTop="@drawable/ic_signout"
+            android:background="@drawable/drawable_main_btn"
+            android:drawablePadding="8dp"
+            android:text="Cerrar sesion"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="1dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickRemoteConfig"
+            android:padding="16dp"
+            android:drawableTop="@drawable/ic_remoteconfig"
+            android:background="@drawable/drawable_main_btn"
+            android:drawablePadding="8dp"
+            android:text="Remote Config"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_regular"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dynamiclink.DynamicLinkActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickDynamicLink"
+            android:text="Crear un nuevo link con datos"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/drawable_primary_btn"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/dynamicTvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="16sp"
+            android:textColor="@color/colorPrimaryText"
+            android:text="Sin datos"/>
+
+    </LinearLayout>
+</RelativeLayout>

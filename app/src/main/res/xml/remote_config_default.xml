@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultMap>
+    <entry>
+        <key>background</key>
+        <value>#FFFFFF</value>
+    </entry>
+
+    <entry>
+        <key>image</key>
+        <value>ic_sin_remote</value>
+    </entry>
+
+    <entry>
+        <key>text</key>
+        <value>Sin remote config</value>
+    </entry>
+
+</defaultMap>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".auth.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_splash"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@android:color/black"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:alpha="0.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_light"
+            android:text="Registrate"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_light"
+            android:text="Esta aplicación requiere de tu invaluable información"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/etRegisterMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="24dp"
+            android:inputType="textEmailAddress"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Correo Electrónico"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:background="@drawable/drawable_login_et"/>
+
+        <EditText
+            android:id="@+id/etRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="16dp"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Contraseña"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:background="@drawable/drawable_login_et"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRegister"
+            android:text="Registrarse"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/roboto_light"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="@drawable/drawable_login_btn"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

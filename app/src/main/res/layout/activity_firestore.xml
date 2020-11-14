@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".firestore.FirestoreActivity">
+
+    <ListView
+        android:id="@+id/firestoreListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/firestoreEtMsj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="52dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:maxLines="3"
+            android:text=""
+            android:inputType="textCapSentences|textMultiLine"
+            android:background="@drawable/drawable_msg" />
+
+        <ImageButton
+            android:id="@+id/ibSend"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/firestoreEtMsj"
+            android:onClick="onClickSaveData"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_comment"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
