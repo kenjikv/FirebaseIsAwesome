@@ -123,8 +123,6 @@ class MLActivity : AppCompatActivity() {
                             builder.append("url: ${barcode.url!!.url}").append("\n")
                         }
                     }
-
-
                 }
                 tvLabelsMl.text = builder.toString()
             }
