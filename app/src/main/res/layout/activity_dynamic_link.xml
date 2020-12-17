@@ -13,6 +13,16 @@
         android:layout_centerVertical="true"
         android:orientation="vertical">
 
+        <EditText
+            android:id="@+id/dynamicEtValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:hint="Colocar el dato a enviar..."
+            android:inputType="textCapSentences"
+            android:layout_margin="16dp"
+            android:background="@drawable/drawable_msg"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

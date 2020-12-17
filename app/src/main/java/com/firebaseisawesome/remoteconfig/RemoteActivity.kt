@@ -36,7 +36,8 @@ class RemoteActivity : AppCompatActivity() {
     }
 
     private fun updateUI(){
-        remotelyt.setBackgroundColor(Color.parseColor(remoteConfig.getString("background")))
+        remotelyt.setBackgroundColor(
+            Color.parseColor(remoteConfig.getString("background")))
 
         if(remoteConfig.getString("image").equals("ic_sin_remote", ignoreCase = true)){
             remoteIvImage.setImageResource(R.drawable.ic_sin_remote)

@@ -45,7 +45,7 @@ class DynamicLinkActivity : AppCompatActivity() {
     }
 
     fun onClickDynamicLink(view: View) {
-        var mivalor = "Kenji Kawaida";
+        var mivalor = dynamicEtValue.text.toString()
 
         FirebaseDynamicLinks.getInstance().createDynamicLink()
             .setLink(Uri.parse("https://firebaseisawesome.page.link?mivalor=$mivalor"))

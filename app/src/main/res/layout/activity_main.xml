@@ -93,14 +93,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="onClickSignOut"
+            android:onClick="onClickMLKit"
             android:padding="16dp"
-            android:drawableTop="@drawable/ic_signout"
+            android:drawableTop="@drawable/ic_mlkit"
             android:background="@drawable/drawable_main_btn"
             android:drawablePadding="8dp"
-            android:text="Cerrar sesion"
+            android:text="ML Kit"
             android:textSize="12sp"
-            android:fontFamily="@font/roboto_regular"/>
+            android:fontFamily="@font/roboto_regular" />
 
         <View
             android:layout_width="8dp"
@@ -110,15 +110,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="onClickRemoteConfig"
+            android:onClick="onClickSignOut"
             android:padding="16dp"
-            android:drawableTop="@drawable/ic_remoteconfig"
+            android:drawableTop="@drawable/ic_signout"
             android:background="@drawable/drawable_main_btn"
             android:drawablePadding="8dp"
-            android:text="Remote Config"
+            android:text="Cerrar sesion"
             android:textSize="12sp"
-            android:fontFamily="@font/roboto_regular"
-            android:visibility="invisible"/>
+            android:fontFamily="@font/roboto_regular"/>
+
+
     </LinearLayout>
 
 </LinearLayout>

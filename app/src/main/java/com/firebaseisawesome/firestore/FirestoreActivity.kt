@@ -34,7 +34,8 @@ class FirestoreActivity : AppCompatActivity() {
     }
 
     private fun initSnapshot() {
-        db.collection("chat").document("mensajes").addSnapshotListener{snapshot, e ->
+        db.collection("chat").document("mensajes")
+            .addSnapshotListener{snapshot, e ->
             if (e != null) {
                 Log.w("", "Listen failed.", e)
                 return@addSnapshotListener
